@@ -3,21 +3,39 @@ owner: upptime # Your GitHub organization or username, where this repository liv
 repo: upptime # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Wiki Central
+    url: https://central.polandball.wiki
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Polandball Hispana
+    url: https://es.polandball.wiki
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Polandball Alemán 
+    url: https://de.polandball.wiki/
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Polandball Italiana 
+    url: https://it.polandball.wiki/
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Polandball Português 
+    url: https://pt.polandball.wiki/
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Wiki Dev (Staging)
+    url: https://central.staging.polandball.wiki/
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+  - name: Analytics
+    url: https://plausible.polandball.wiki/
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-plausible.svg
+  - name: Action API
+    url: https://es.polandball.wiki/api.php?action=query&prop=info&titles=Countryball
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+    method: GET
+  - name: REST API
+    url: https://es.polandball.wiki/rest.php/v1/page/Countryball
+    icon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/icon-mediawiki.svg
+    method: GET
+    __dangerous__body_down: "apierror-"
 
 status-website:
+<<<<<<< HEAD
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: demo.upptime.js.org
@@ -29,8 +47,37 @@ status-website:
   navbar:
     - title: Status
       href: /
+=======
+  # Add your custom domain below, or remove the next line if you don't have a domain
+  # cname: status.polandball.wiki
+  # Uncomment the following line if you don't have a custom domain and add your repo name
+baseUrl: /upptime
+  # The assets folder copying never worked correctly, so just point to GitHub instead
+favicon: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/wphbolita.png
+logoUrl: https://raw.githubusercontent.com/PolandballWiki/upptime/master/assets/wphbolita.png
+name: Encyclopaedia Polandballae Status
+metaTags:
+    - name: "description"
+      content: "Real-time and historical data on system performance of Encyclopaedia Polandballae"
+    - name: "theme-color"
+      content: "#a21111"
+links:
+    - rel: stylesheet
+      href: https://raw.githubusercontent.com/PolandballWiki/upptime/refs/heads/master/assets/sct-dark.css
+
+navbar:
+    - title: Encyclopaedia Polandballae
+      href: https://central.polandball.wiki
+    - title: Analytics
+      href: https://plausible.polandball.wiki/
+    - title: Discord
+      href: https://discord.com/invite/fz6eeZn
+>>>>>>> cc20234 (Config for upptime)
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/$OWNER/
+theme: dark
+
+  
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
